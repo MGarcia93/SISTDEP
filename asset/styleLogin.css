@@ -1,0 +1,52 @@
+body{
+	background:url(../img/fondo3.png);
+}
+input{
+	display: block;
+	width: 100%;
+	font-size: 18px;
+	border-radius: 10px;
+	border: none;
+	text-align: center;
+	padding: .3em 0;
+	margin: .4em 0;
+}
+input[type="text"],input[type="password"]{
+	background: rgba(200,200,200,.8);
+}
+input[type="submit"]{
+	cursor: pointer;
+	background: grey;
+	color: white;
+}
+input[type="submit"]:hover{
+	font-weight: bolder;
+	background: lightgrey;
+}
+fieldset{
+	text-align: center;
+	padding: 5px 10px;
+	width: 300px;
+	margin: 75px auto;
+	border:0;
+	background: rgba(199, 228, 169,.8);
+	border-radius: 5px;
+	box-shadow: 1px 1px 4px 6px #bbb;
+}
+p{
+	font-size: 20px;
+	font-weight: bold;
+	color: grey;
+}
+
+.clientes{
+	margin: 5px 10%;
+	width: 80%;
+}
+
+section{
+	background: url(../img/depo.png);
+	margin-top: 10px;
+	padding-top: 20px;
+	padding-bottom: 1px;
+}
