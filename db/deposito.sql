@@ -184,5 +184,16 @@ CONSTRAINT fk_deposito_remitoEgr FOREIGN  KEY(idRemitoEgr) REFERENCES remitos(id
 CONSTRAINT fk_deposito_Orden FOREIGN  KEY(idOrden) REFERENCES ordenes(id)
 )ENGINE=InnoDB;
 
+CREATE TABLE ajuste(
+id 		      	int(255) auto_increment not null,
+descripcion		varchar(255) not null,
+fecha  			date not null,
+idStock			int(255) auto_increment not null,
+cantidad 		int not null,
+tipo 			char check(tipo="p" or tipo="n") not null,
+CONSTRAINT pk_ajuste PRIMARY KEY(id),
+CONSTRAINT fk_ajuste_stock FOREIGN key(idStock) REFERENCES stock(id)
+)ENGINE=InnoDB;
+
 INSERT INTO tipo_sacado(nombre) VALUES('parcial'),('completo');
 INSERT INTO tipos_ordenes(nombre) VALUES('ingreso'),('salida');
